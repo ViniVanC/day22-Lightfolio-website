@@ -1,0 +1,29 @@
+$font-Inter: "Inter";
+$root-font-size: 16;
+
+$white: #ffffff;
+$light-gray: #f7f7f7;
+$dark-gray: #757575;
+$light-balk: #525252;
+$black: #000000;
+$peachy: #ffebd8;
+
+$media-screen-xs: "479.99px";
+$media-screen-sm: "767.99px";
+$media-screen-md: "1059.99px";
+$media-hover: "(hover:hover) and (pointer:pointer)";
+
+$z-index-1: 1;
+$z-index-2: 2;
+$z-index-3: 3;
+$z-index-4: 4;
+$z-index-5: 5;
+$z-index-6: 6;
+
+@function rem($px) {
+  @return ($px / $root-font-size) + rem;
+}
+
+@function em($px) {
+  @return ($px / $root-font-size) + em;
+}

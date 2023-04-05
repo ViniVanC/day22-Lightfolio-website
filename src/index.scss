@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+// ============================================================
+// ui-kit
+@import "ui-kit.scss";
+
+// ============================================================
+// tags
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+// ============================================================
+// ids
+
+#root {
+  font-family: $font-Inter, sans-serif;
+  font-size: $root-font-size;
+
+  color: $black;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+// ============================================================
+// classes
