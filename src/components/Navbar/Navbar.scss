@@ -1,0 +1,29 @@
+@import "../../ui-kit";
+
+.navbar {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+
+    list-style: none;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $light-balk;
+    font-size: rem(18);
+    line-height: percent(18, 27);
+    letter-spacing: rem(0.18);
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+      @media #{$media-hover} {
+        color: $black;
+      }
+    }
+  }
+}
