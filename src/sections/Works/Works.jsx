@@ -6,42 +6,42 @@ import "./Works.scss";
 
 const worksList = [
   {
-    imgSrc: "/public/images/works/work-img1.jpg",
+    imgSrc: "/images/works/work-img1.jpg",
     alt: "work-img1",
     title: "Rule ratio",
     description: "Product design",
     href: "#",
   },
   {
-    imgSrc: "/public/images/works/work-img2.jpg",
+    imgSrc: "/images/works/work-img2.jpg",
     alt: "work-img2",
     title: "Situation",
     description: "Visual identity",
     href: "#",
   },
   {
-    imgSrc: "/public/images/works/work-img3.jpg",
+    imgSrc: "/images/works/work-img3.jpg",
     alt: "work-img3",
     title: "Dry air",
     description: "User research",
     href: "#",
   },
   {
-    imgSrc: "/public/images/works/work-img4.jpg",
+    imgSrc: "/images/works/work-img4.jpg",
     alt: "work-img4",
     title: "Vertical",
     description: "Product design",
     href: "#",
   },
   {
-    imgSrc: "/public/images/works/work-img5.jpg",
+    imgSrc: "/images/works/work-img5.jpg",
     alt: "work-img5",
     title: "Variable compose",
     description: "Product design",
     href: "#",
   },
   {
-    imgSrc: "/public/images/works/work-img6.jpg",
+    imgSrc: "/images/works/work-img6.jpg",
     alt: "work-img6",
     title: "Scope shift",
     description: "Product design",

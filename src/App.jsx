@@ -34,10 +34,7 @@ function App() {
             visible: { opacity: 1 },
           }}
         >
-          <img
-            src="/public/images/decorate/decorate-img1.jpg"
-            alt="decorate-img"
-          />
+          <img src="/images/decorate/decorate-img1.jpg" alt="decorate-img" />
         </motion.div>
         <Experience />
         <ServicesAndSelectedClients />
