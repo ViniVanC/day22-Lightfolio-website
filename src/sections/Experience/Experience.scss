@@ -1,0 +1,46 @@
+@import "../../ui-kit";
+
+.experience {
+  &__job-item {
+    padding-bottom: rem(50);
+    letter-spacing: rem(0.6);
+    border-bottom: 1px solid #f0f0f0;
+
+    &:not(:first-child) {
+      margin-top: rem(50);
+      @media screen and (max-width: $media-screen-sm) {
+        margin-top: rem(25);
+      }
+    }
+
+    @media screen and (max-width: $media-screen-sm) {
+      padding-bottom: rem(25);
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  &__company-name {
+    color: $black;
+    font-size: rem(19);
+    line-height: percent(19, 26);
+  }
+
+  &__job-title {
+    margin-top: rem(4);
+
+    color: $light-balk;
+    font-size: rem(17);
+    line-height: percent(17, 26);
+  }
+
+  &__job-date {
+    margin-top: rem(16);
+
+    color: $light-balk;
+    font-size: rem(19);
+    line-height: percent(19, 30);
+  }
+}
