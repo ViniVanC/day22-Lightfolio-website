@@ -1,0 +1,17 @@
+@import "../../ui-kit";
+
+.col {
+}
+
+.element-list {
+  list-style: none;
+
+  &__item {
+    padding-bottom: rem(25);
+    border-bottom: 1px solid #f0f0f0;
+
+    &:not(:first-child) {
+      margin-top: rem(25);
+    }
+  }
+}
