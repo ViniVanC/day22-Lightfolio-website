@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./components/Header/Header";
 import { TextBanner } from "./components/TextBanner/TextBanner";
 import { Intro } from "./sections/Intro/Intro";
+import { Works } from "./sections/Works/Works";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
         <a href="#">View all templates</a>
       </TextBanner>
       <Header />
-      <Intro />
+      <main>
+        <Intro />
+        <Works />
+      </main>
     </>
   );
 }
