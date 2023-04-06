@@ -18,6 +18,12 @@ function App() {
         <Intro />
         <Works />
         <AboutMe />
+        <div className="section decorate-img">
+          <img
+            src="/public/images/decorate/decorate-img1.jpg"
+            alt="decorate-img"
+          />
+        </div>
       </main>
     </>
   );
