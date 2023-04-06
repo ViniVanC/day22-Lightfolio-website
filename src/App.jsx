@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { TextBanner } from "./components/TextBanner/TextBanner";
 import { AboutMe } from "./sections/AboutMe/AboutMe";
@@ -31,6 +32,7 @@ function App() {
         <ServicesAndSelectedClients />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
