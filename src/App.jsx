@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./components/Header/Header";
 import { TextBanner } from "./components/TextBanner/TextBanner";
 import { AboutMe } from "./sections/AboutMe/AboutMe";
+import { Experience } from "./sections/Experience/Experience";
 import { Intro } from "./sections/Intro/Intro";
 import { Works } from "./sections/Works/Works";
 
@@ -24,6 +25,7 @@ function App() {
             alt="decorate-img"
           />
         </div>
+        <Experience />
       </main>
     </>
   );
