@@ -4,6 +4,7 @@ import { TextBanner } from "./components/TextBanner/TextBanner";
 import { AboutMe } from "./sections/AboutMe/AboutMe";
 import { Experience } from "./sections/Experience/Experience";
 import { Intro } from "./sections/Intro/Intro";
+import { ServicesAndSelectedClients } from "./sections/ServicesAndSelectedClients/ServicesAndSelectedClients";
 import { Works } from "./sections/Works/Works";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           />
         </div>
         <Experience />
+        <ServicesAndSelectedClients />
       </main>
     </>
   );
