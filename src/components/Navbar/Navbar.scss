@@ -8,4 +8,10 @@
 
     list-style: none;
   }
+
+  &__link {
+    font-size: rem(18);
+    line-height: percent(18, 27);
+    letter-spacing: rem(0.18);
+  }
 }
