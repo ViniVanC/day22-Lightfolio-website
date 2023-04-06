@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "../Container";
 import { Navbar } from "../Navbar/Navbar";
+import "./Header.scss";
 
 export const Header = () => {
   return (
