@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./components/Header/Header";
 import { TextBanner } from "./components/TextBanner/TextBanner";
 import { AboutMe } from "./sections/AboutMe/AboutMe";
+import { Contact } from "./sections/Contact/Contact";
 import { Experience } from "./sections/Experience/Experience";
 import { Intro } from "./sections/Intro/Intro";
 import { ServicesAndSelectedClients } from "./sections/ServicesAndSelectedClients/ServicesAndSelectedClients";
@@ -28,6 +29,7 @@ function App() {
         </div>
         <Experience />
         <ServicesAndSelectedClients />
+        <Contact />
       </main>
     </>
   );
