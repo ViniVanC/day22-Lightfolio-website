@@ -59,4 +59,45 @@ a {
 .section {
   padding-top: rem(128);
   padding-bottom: rem(128);
+
+  &-inner__two-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div {
+      min-width: 400px;
+      flex: 0 1 50%;
+
+      @media screen and (max-width: $media-screen-sm) {
+        min-width: auto;
+        flex: 1 1 100%;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: rem(30);
+    line-height: percent(30, 40);
+    letter-spacing: rem(0.6);
+    color: $black;
+
+    margin-bottom: rem(35);
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: rem(28);
+    line-height: percent(28, 42);
+    letter-spacing: rem(0.3);
+    color: $black;
+
+    &:not(:first-child) {
+      margin-top: rem(32);
+    }
+
+    @media screen and (max-width: $media-screen-sm) {
+      font-size: rem(20);
+    }
+  }
 }
