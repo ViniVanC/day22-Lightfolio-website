@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "../Container";
 import { Navbar } from "../Navbar/Navbar";
+import "./Footer.scss";
 
 const socialNetworks = [
   {
@@ -38,13 +39,13 @@ const options = [
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="section footer">
       <Container>
         <div className="footer__box footer__top">
           <Navbar />
           <Navbar itemsList={socialNetworks} />
         </div>
-
+        <hr />
         <div className="footer__box footer__bottom">
           <Navbar itemsList={options} />
           <div className="footer__info">
