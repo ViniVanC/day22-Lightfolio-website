@@ -13,4 +13,8 @@
   line-height: percent(12, 20);
   letter-spacing: rem(0.13);
   color: $black;
+
+  @media screen and (max-width: $media-screen-xs) {
+    display: none;
+  }
 }
