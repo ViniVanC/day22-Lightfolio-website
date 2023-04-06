@@ -1,19 +1,20 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.scss";
 
 export const Navbar = ({
   itemsList = [
     {
       text: "Work",
-      href: "#",
+      href: "Works",
     },
     {
       text: "About",
-      href: "#",
+      href: "AboutMe",
     },
     {
       text: "Contact",
-      href: "#",
+      href: "Contact",
     },
   ],
 }) => {
@@ -22,9 +23,16 @@ export const Navbar = ({
       <ul className="navbar__list">
         {itemsList?.map((item, i) => (
           <li key={i} className="navbar__item">
-            <a className="navbar__link" href={item.href}>
+            <Link
+              activeClass="active"
+              to={item.href}
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="navbar__link"
+            >
               {item.text}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

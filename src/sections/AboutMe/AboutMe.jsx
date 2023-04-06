@@ -3,7 +3,7 @@ import { Container } from "../../components/Container";
 
 export const AboutMe = () => {
   return (
-    <section className="section about-me">
+    <section className="section about-me" id="AboutMe">
       <Container>
         <div className="about-me__inner section-inner__two-grid">
           <div className="about-me__col">

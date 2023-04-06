@@ -4,9 +4,31 @@
   background-color: $white;
   padding: rem(25) 0;
 
+  &.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: fixed-anim 0.3s ease;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
     justify-content: end;
+  }
+
+  .navbar__link.active {
+    color: $black;
+  }
+}
+
+@keyframes fixed-anim {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
   }
 }

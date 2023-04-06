@@ -4,7 +4,7 @@ import "./Contact.scss";
 
 export const Contact = () => {
   return (
-    <section className="section contact">
+    <section className="section contact" id="Contact">
       <Container>
         <div className="contact__inner">
           <h2 className="contact__title">

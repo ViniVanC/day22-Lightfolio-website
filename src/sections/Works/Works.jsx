@@ -55,7 +55,7 @@ const breakpointColumnsObj = {
 
 export const Works = () => {
   return (
-    <section className="section works">
+    <section className="section works" id="Works">
       <Container>
         <header className="works__header">
           <h2>
