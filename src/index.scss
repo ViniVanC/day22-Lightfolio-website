@@ -60,18 +60,35 @@ a {
   padding-top: rem(128);
   padding-bottom: rem(128);
 
+  @media screen and (max-width: $media-screen-sm) {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+  }
   &-inner__two-grid {
     display: flex;
-    flex-wrap: wrap;
 
     > div {
       min-width: 400px;
       flex: 0 1 50%;
 
+      &:not(:first-child) {
+        margin-left: rem(72);
+      }
+
       @media screen and (max-width: $media-screen-sm) {
         min-width: auto;
         flex: 1 1 100%;
+
+        &:not(:first-child) {
+          margin-left: rem(0);
+        }
+
+        margin-bottom: rem(50);
       }
+    }
+
+    @media screen and (max-width: $media-screen-sm) {
+      flex-wrap: wrap;
     }
   }
 
