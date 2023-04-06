@@ -1,0 +1,16 @@
+@import "../../ui-kit";
+
+.text-banner {
+  background-color: $light-gray;
+
+  padding: rem(12) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(16);
+
+  font-size: rem(12);
+  line-height: percent(12, 20);
+  letter-spacing: rem(0.13);
+  color: $black;
+}
