@@ -1,0 +1,22 @@
+@import "../../ui-kit";
+
+.intro {
+  &__inner {
+    margin: rem(128) 0 rem(54);
+  }
+
+  &__title {
+    max-width: 900px;
+    width: 100%;
+
+    color: $black;
+    font-weight: 400;
+    font-size: rem(64);
+    line-height: percent(64, 74);
+    letter-spacing: rem(2.5);
+
+    span {
+      color: $dark-gray;
+    }
+  }
+}
