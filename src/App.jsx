@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./components/Header/Header";
 import { TextBanner } from "./components/TextBanner/TextBanner";
+import { AboutMe } from "./sections/AboutMe/AboutMe";
 import { Intro } from "./sections/Intro/Intro";
 import { Works } from "./sections/Works/Works";
 
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Intro />
         <Works />
+        <AboutMe />
       </main>
     </>
   );
