@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { TextBanner } from "./components/TextBanner/TextBanner";
@@ -22,12 +23,22 @@ function App() {
         <Intro />
         <Works />
         <AboutMe />
-        <div className="section decorate-img">
+        <motion.div
+          className="section decorate-img"
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+        >
           <img
             src="/public/images/decorate/decorate-img1.jpg"
             alt="decorate-img"
           />
-        </div>
+        </motion.div>
         <Experience />
         <ServicesAndSelectedClients />
         <Contact />

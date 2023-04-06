@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Container } from "../../components/Container";
 import "./ServicesAndSelectedClients.scss";
@@ -23,22 +24,68 @@ export const ServicesAndSelectedClients = () => {
       <Container>
         <div className="section-inner__two-grid">
           <div className="services col">
-            <h2 className="section__title">Services</h2>
+            <motion.h2
+              className="section__title"
+              initial="hidden"
+              whileInView={"visible"}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              Services
+            </motion.h2>
             <ul className="services__list element-list">
               {servicesList?.map((item, i) => (
-                <li key={i} className="element-list__item">
+                <motion.li
+                  key={i}
+                  className="element-list__item"
+                  initial="hidden"
+                  whileInView={"visible"}
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: `.${i + 2}`, duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
                   {item}
-                </li>
+                </motion.li>
               ))}
             </ul>
           </div>
           <div className="selected-clients col">
-            <h2 className="section__title">Selected clients</h2>
+            <motion.h2
+              className="section__title"
+              initial="hidden"
+              whileInView={"visible"}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.9, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              Selected clients
+            </motion.h2>
             <ul className="selected-clients__list element-list">
               {selectedClientsList?.map((item, i) => (
-                <li key={i} className="element-list__item">
+                <motion.li
+                  key={i}
+                  className="element-list__item"
+                  initial="hidden"
+                  whileInView={"visible"}
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: `1.${i + 2}`, duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
                   {item}
-                </li>
+                </motion.li>
               ))}
             </ul>
           </div>
