@@ -1,0 +1,73 @@
+@import "../../ui-kit";
+
+.works {
+  &__header {
+    h2 {
+      color: $black;
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: percent(16, 23.4);
+      letter-spacing: rem(0.54);
+
+      span {
+        color: $dark-gray;
+      }
+    }
+  }
+
+  &__inner {
+    margin-top: rem(30);
+  }
+
+  &__list {
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+  }
+}
+
+.works-item {
+  background-color: $light-gray;
+  max-width: rem(612);
+
+  &:not(:first-child) {
+    margin-top: rem(24);
+  }
+
+  &__img-box {
+    max-width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__body {
+    padding: rem(24);
+
+    font-size: rem(18);
+    line-height: percent(18, 26);
+    letter-spacing: rem(0.6);
+  }
+
+  &__title {
+    color: $black;
+  }
+
+  &__description {
+    margin-top: rem(4);
+    color: $dark-gray;
+  }
+}
+
+.my-masonry-grid_column {
+  background-color: #fff;
+  padding-left: 24px;
+  width: 100%;
+}
+
+@media (min-width: $media-screen-sm) {
+  .my-masonry-grid_column {
+    width: 100%;
+  }
+}
